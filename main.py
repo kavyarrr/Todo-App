@@ -7,3 +7,5 @@
 import webbrowser
 u=input("enter search term ")
 webbrowser.open("https://www.google.com/search?q="+ u)
+
+
