@@ -1,8 +1,5 @@
 fix tubelight
 play guitar
 draft a letter
-sing songs
-complete course
-buy groceries
-clean shoefix computer
-help neighboyr
+sing a song
+fix the laptop
