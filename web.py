@@ -18,7 +18,3 @@ for i in todos:
         st.experimental_rerun()
 st.text_input(label=" ",placeholder="Add a todo...",
               on_change=add_todo,key="newtodo")
-
-print("hello")
-
-st.session_state
