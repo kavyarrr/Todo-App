@@ -9,12 +9,12 @@ def add_todo():
 st.title("My Todo App")
 st.subheader("Hello, let's start!")
 st.write("Being productive one step at a time")
-for i in todos:
-    checkb=st.checkbox(i,key=i)
+for i, todo in enumerate(todos):  # Use enumerate to get index and item
+    checkb = st.checkbox(todo, key=i)  # Set key using the index
     if checkb:
-        todos.remove(i)
+        todos.remove(todo)
         fun.change(todos)
-        del st.session_state[i]
+        del st.session_state[todo]
         st.experimental_rerun()
 st.text_input(label=" ",placeholder="Add a todo...",
               on_change=add_todo,key="newtodo")
